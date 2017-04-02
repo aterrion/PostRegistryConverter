@@ -8,27 +8,26 @@
         Title="MainWindow" Height="700" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70*"/>
-            <ColumnDefinition Width="145*"/>
-            <ColumnDefinition Width="45*"/>
-            <ColumnDefinition Width="140*"/>
-            <ColumnDefinition Width="55*"/>
-            <ColumnDefinition Width="139*"/>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="148*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="38*"/>
-            <RowDefinition Height="38*"/>
-            <RowDefinition Height="36*"/>
-            <RowDefinition Height="348*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="94*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="23*"/>
         </Grid.RowDefinitions>
         <ListView x:Name="listView" Grid.Row="3" Grid.ColumnSpan="8" Margin="0,0,1,0" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" >
             <ListView.View>
@@ -37,9 +36,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label x:Name="label" Content="Label" Grid.Row="1" Grid.Column="0"/>
-        <TextBox x:Name="textBox" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Grid.ColumnSpan="5"/>
-        <Button x:Name="button" Content="Button"  Grid.Row="1" Grid.Column="5"/>
+        <Label x:Name="lbOpen" Content="Реєстр ПВ" Grid.Row="1" Grid.Column="0"/>
+        <TextBox x:Name="tbFile" Margin="1" Grid.Row="1" TextWrapping="Wrap" Text="C:\" Grid.Column="1" Grid.ColumnSpan="5"/>
+        <Button x:Name="btOpen" Margin ="1" Content="Обзор..."  Grid.Row="1" Grid.Column="5"/>
         <Button x:Name="button1" Content="Button" Grid.Row="2" Grid.Column="1"/>
         <Button x:Name="button2" Content="Button" Grid.Row="2" Grid.Column="3"/>
         <Button x:Name="button2_Copy" Content="Button" Grid.Row="2" Grid.Column="5"/>
@@ -48,16 +47,16 @@
         <Label x:Name="label2" Content="Label" Grid.Row="6" />
         <Label x:Name="label3" Content="Label" Grid.Row="7" />
         <Label x:Name="label4" Content="Label" Grid.Row="8" />
-        <TextBox x:Name="textBox1" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" />
-        <TextBox x:Name="textBox2" Grid.ColumnSpan="5" Grid.Column="1" Grid.Row="7" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox1" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" />
+        <TextBox x:Name="textBox2" Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="7" TextWrapping="Wrap" Text="TextBox"/>
         <TextBox x:Name="textBox3" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" />
         <TextBox x:Name="textBox4" Grid.Column="1" Grid.Row="8" TextWrapping="Wrap" Text="TextBox" />
-        <Label x:Name="label5" Content="Label" Grid.Column="4" Grid.Row="8"/>
-        <TextBox x:Name="textBox5" Grid.Column="5" Grid.Row="8" TextWrapping="Wrap" Text="TextBox" />
-        <Label x:Name="label6" Content="Label" Grid.Column="4" Grid.Row="5"/>
-        <TextBox x:Name="textBox6" Grid.Column="5" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" />
+        <Label x:Name="label5" Content="Label" Grid.Column="3" Grid.Row="8"/>
+        <TextBox x:Name="textBox5" Grid.Column="4" Grid.Row="8" TextWrapping="Wrap" Text="TextBox" />
+        <Label x:Name="label6" Content="Label" Grid.Column="3" Grid.Row="5"/>
+        <TextBox x:Name="textBox6" Grid.Column="4" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" />
         <TextBlock x:Name="textBlock" Margin="10" Grid.Row="9" TextWrapping="Wrap" Text="TextBlock" Grid.ColumnSpan="8" Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}"/>
-        <Button x:Name="button3" Content="Button" Grid.Column="7" Grid.Row="8" />
-        <Button x:Name="button3_Copy" Content="Button" Grid.Column="7" Grid.Row="6" />
+        <Button x:Name="button3" Content="Button" Grid.Column="6" Grid.Row="8" />
+        <Button x:Name="button3_Copy" Content="Button" Grid.Column="6" Grid.Row="6" />
     </Grid>
 </Window>
