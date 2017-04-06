@@ -59,11 +59,11 @@ namespace PostReg
         /// <summary>
         /// PKPRICE - стоимость, дробное 10 цифр, 2 дробных
         /// </summary>
-        public float PKPRICE { get; set; }
+        public double PKPRICE { get; set; }
         /// <summary>
         /// AFTPAY - наложный платеж? дробное 10 цифр, 2 дробных
         /// </summary>
-        public float AFTPAY { get; set; }
+        public double AFTPAY { get; set; }
         /// <summary>
         /// PHONE - телефон получателя, 15 символов.
         /// </summary>
