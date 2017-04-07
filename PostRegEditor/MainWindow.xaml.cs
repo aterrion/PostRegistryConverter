@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using PostReg;
 namespace PostRegEditor
 {
     /// <summary>
@@ -22,6 +22,8 @@ namespace PostRegEditor
     {
         public MainWindow()
         {
+            Index.Load("Index.xml");
+            Index.Update("Update.xml");
             InitializeComponent();
         }
     }
